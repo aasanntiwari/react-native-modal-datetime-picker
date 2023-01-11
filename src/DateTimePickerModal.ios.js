@@ -205,11 +205,11 @@ const pickerStyles = StyleSheet.create({
   },
   container: {
     borderRadius: BORDER_RADIUS,
-    marginBottom: 8,
+    marginBottom: isIphoneX() ? 30 : 8,
     overflow: "hidden",
   },
   pickerSpinner: {
-    marginBottom: 8,
+    marginBottom: isIphoneX() ? 30 : 8,
   },
   pickerInline: {
     paddingHorizontal: 12,
