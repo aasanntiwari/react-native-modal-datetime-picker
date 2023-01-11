@@ -285,8 +285,8 @@ export interface DateTimePickerProps {
 }
 
 type NativePickerProps =
-  | Omit<IOSNativeProps, "value" | "mode" | "onChange">
-  | Omit<AndroidNativeProps, "value" | "mode" | "onChange">;
+  | Omit<IOSNativeProps, "value" | "mode">
+  | Omit<AndroidNativeProps, "value" | "mode">;
 
 export type ReactNativeModalDateTimePickerProps = DateTimePickerProps &
   NativePickerProps;
